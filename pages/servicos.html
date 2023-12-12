@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Tem Trampo Aí?</title>
+    <link rel="stylesheet" href="main.css">
+
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-container">
+            <a href="home.html">
+                <h1 class="logo">Tem Trampo Aí?</h1>
+            </a>
+            <nav>
+
+                <ul>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="editais.html">Editais</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    
+    
+    
+     <section id="servicos" class="servicos">
+
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'ofertarTab')">Ofertar Serviço</button>
+            <button class="tablinks" onclick="openTab(event, 'verTab')">Ver Serviços Ofertados</button>
+        </div>
+
+        <div id="ofertarTab" class="tabcontent">
+            <h2>Ofertar Serviço</h2>
+            <form id="ofertaForm">
+                <div class="c">
+                <label for="nome" class="label-job">Nome:</label>
+                <input class="input-job" type="text" id="nome" name="nome" required>
+               
+                <label for="bairro" class="label-job">Bairro:</label>
+                <input class="input-job" type="text" id="bairro" name="bairro" required>
+
+                <label for="trabalho" class="label-job">Trabalho:</label>
+                <input class="input-job" type="text" id="trabalho" name="trabalho" required>
+
+                <label for="preco" class="label-job">Preço:</label>
+                <input type="text" class="input-job" id="preco" name="preco" required>
+
+                <label for="contato" class="label-job">Contato:</label>
+                <input type="text" class="input-job" id="contato" name="contato" placeholder="(81) 9xxxx-xxxx" required>
+
+                <button class="post-btn" type="button" onclick="publicarOferta()">Publicar Oferta</button>
+            </div>
+            </form>
+        </div>
+
+        <div id="verTab" class="tabcontent">
+            <h2>Serviços Ofertados</h2>
+            <label class="label-job" for="pesquisa">Pesquisar:</label>
+
+            <input class="input-job" type="text" id="pesquisa" oninput="filtrarServicos()" placeholder=" Digite para pesquisar" >
+    
+            <div id="listaOfertas"></div>
+        </div>
+        
+    </section>
+
+    
+    
+    
+    <footer class="footer">
+        <div class="social">
+            <h1 class="footer-title">
+                Tem Trampo Aí?
+            </h1>
+<br><br>
+         
+            <a href="">
+                <i class="fab fa-facebook-square"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-twitter-square"></i>
+            </a>
+            <a href="">
+                <i class="fab fa-pinterest"></i>
+            </a>
+        </div>
+    </footer>
+
+
+
+    <script src="https://kit.fontawesome.com/8cd84ceb0c.js" crossorigin="anonymous"></script>
+    <script src="assets/Js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+
+    font-size: 1.6rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: rgb(240, 245, 240);
+}
+
+
+section.banner{
+    margin-bottom: 1rem;
+}
+
+section.servicos{
+    padding-bottom: 1rem;
+}
+
+section.con{
+padding-bottom: 1rem;
+}
+
+section.editais{
+padding-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.header .header-container {
+    display: flex;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 75px;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.header a:hover h1 {
+    color: coral;
+}
+
+.header nav ul {
+    display: flex;
+}
+
+.header nav ul li a {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.3s;
+}
+
+.header nav ul li a:hover {
+    color: #fff;
+    background-color: coral;
+}
+
+.banner {
+    height: 87vh;
+    background: url('assets/people.gif') center center no-repeat;
+    display: flex;
+    /* background-size: cover; */
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+.banner h2 {
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 4rem;
+    color: rgb(0, 0, 0);
+    padding-top: 5rem;
+    font-weight: 900;
+}
+
+@media (max-width: 425px) {
+    .banner {
+        height: 60vh;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+}
+
+
+
+
+/* Serviços */
+
+.tabs {
+    display: flex;
+    overflow: hidden;
+    border: 0.3rem solid coral;
+    background-color: coral;
+    border-top-right-radius: 0.8rem;
+    justify-content: space-around;
+    border-top-left-radius: 0.8rem;
+}
+
+.tablinks {
+    /* background-color: black; */
+    /* float: left; */
+    border: 0.2rem solid white;
+    cursor: pointer;
+    padding: 10px;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 0.3rem;
+
+}
+
+.minhaClasse{
+    background-color: #fff;
+}
+
+.tabcontent {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    border-top: 0.2rem solid rgba(247, 221, 213, 0.604);
+    background-color: coral;
+    height: 100%;
+}
+
+
+#verTab {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
+
+.input-job {
+    
+    display: flex;
+    justify-content: center;
+    width: 40rem;
+    padding: 1rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+
+.label-job {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.c {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-btn {
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 0.5rem;
+}
+
+#listaOfertas {
+    padding-bottom: 1rem;
+}
+
+/* Editais */
+
+
+.txt-edital {
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.item {
+    width: 20rem;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #241f1f;
+}
+
+.box {
+
+    border-radius: 0.7rem;
+
+}
+
+.img.box {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.item.descricao {
+    font-size: 100px;
+}
+
+
+
+/* Sobre */
+
+#sobre {
+    padding-top: 3rem;
+}
+
+.sobre {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    padding-top: 5rem;
+}
+
+.txt-sobre {
+    width: 30rem;
+    font-size: 2.5rem;
+}
+
+.img-sobre {
+    width: 900px;
+}
+
+.like-button {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.like-count {
+    margin-left: 10px;
+}
+
+/* Contato */
+
+.contato {
+    display: flex;
+    background-color: coral;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 25rem;
+    width: 100%;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
+    
+}
+
+
+
+
+.form {
+    padding-top: 1rem;
+}
+
+.area {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.input-area {
+    width: 70rem;
+    height: 15rem;
+    border-radius: 0.3rem;
+}
+
+.btn-area {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+}
+
+
+.btn {
+    width: 10rem;
+    border-radius: 1.5rem;
+    height: 3rem;
+    border: 2px solid rgb(4, 158, 158);
+    color: gray;
+
+}
+
+.input{
+    height: 3rem; 
+    border-radius: 0.3rem;
+}
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    background-color: coral;
+    flex-direction: column;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.footer h4 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.footer nav {
+    margin: 50px 0;
+}
+
+.footer nav ul {
+    display: flex;
+    justify-content: center;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.footer nav ul li a {
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 20px;
+    transition: 0.3s;
+}
+
+.footer nav ul li a:hover {
+    font-weight: 700;
+    color: #fff;
+}
+
+.footer .social i {
+    font-size: 2rem;
+    transition: 0.3s;
+}
+
+.footer .social a {
+    margin: 20px;
+}
+
+.footer .social a:hover {
+    color: #fff;
+}
